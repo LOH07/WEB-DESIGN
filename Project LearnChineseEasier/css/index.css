@@ -1,0 +1,184 @@
+body {background-color: black;}
+
+#wrapper {
+position: relative;
+width: 800px;
+height: 800px;
+border: 1px solid black;
+background-color: #ffffff;
+}
+
+#header {
+position:relative;
+width:100%;
+height: 200px;
+border: 1px solid black;
+margin-top: 0px;
+background-color: yellow;
+}
+
+#title{
+position:absolute;
+top: 50px;
+left: 200px;
+width: 400px;
+text-align: center;
+font-family: Arial;
+color: #0000CC;
+}
+
+#lanternL{
+position: absolute;
+left: 0px;
+}
+
+#lanternR{
+position: absolute;
+right: 0px;
+}
+
+/*---Menu style---*/
+#Menu {
+position: absolute;
+left: 10px; 
+top: 180px;
+z-index: 100;
+}
+
+.MenTitleItem {
+list-style-type: none;
+border: 1px solid black;
+width: 170px;
+height: 20px;
+float: left;
+background-color: #ff0000;
+margin: 1px;
+text-align: center;					
+}
+
+.MenTitleItem:hover {
+background-color: #bb0000;
+}
+
+a.MenTitleAnchor:link, a.MenTitleAnchor:visited  {
+text-decoration: none;
+color: yellow;
+font-family: Arial;
+font-size: 14px;
+font-weight: bold;
+}
+
+.MenLev1 {display: none;}
+
+.MenTitleItem:hover .MenLev1 {
+display: block;
+width:100px;
+list-style-type: none;
+border: 1px solid black;
+padding: 0;/*this makes the block to be inside the frame*/
+text-align: left;
+}
+
+.MenLev1Item {
+border-bottom: 1px solid black;
+padding: 0px 0px 0px 4px;
+height: 20px;
+background: white url('../imagesVT/black_arrow.png') no-repeat 92px center;
+}
+
+.MenLev1Item:hover {background-color: yellow;}
+
+a.subMenAnchor:link, a.subMenAnchor:visited {
+text-decoration: none;
+color: #ff0000;
+font-family: Arial;
+font-size: 14px;
+font-weight: bold;
+}
+
+.MenLev2_2, .MenLev2_3 {display: none;}
+
+.MenLev1Item:hover .MenLev2_2 {
+display: inline-block;/*this aligns the block at the same height with the parent block*/
+position: absolute;
+left: 317px;
+width:90px;
+list-style-type: none;
+border: 1px solid black;
+text-align: center;
+padding: 0;/*this makes the block to be inside the frame*/
+background-color: #ffffff;
+}
+
+.MenLev1Item:hover .MenLev2_3 {
+display: inline-block;/*this aligns the block at the same height with the parent block*/
+position: absolute;
+left: 491px;
+width:90px;
+list-style-type: none;
+border: 1px solid black;
+text-align: center;
+padding: 0;/*this makes the block to be inside the frame*/
+background-color: #ffffff;
+}
+
+.MenLev2Item {border-bottom: 1px solid black;}
+
+.MenLev2Item:hover {background-color: yellow;}
+/*---End Menu style---*/
+
+#wrapper p {
+margin: 50px auto;
+padding: 10px;
+width: 90%;
+text-align: justify;
+font-family: Arial;
+color: #0000CC;
+}
+
+#wrapper p .span1{
+font-weight: bold;
+}
+
+#wrapper p .span2{
+font-weight: bold;
+font-style: italic;
+}
+
+/*---CONTACT page style---*/
+#contactTitle {
+position: relative;
+top: 50px;
+left: 300px;
+font-family: Arial;
+color: #0000CC;
+z-index: 0;
+}
+
+p#contact {
+padding: 50px 50px 200px 50px;
+font-size: 18px;
+text-align: center;
+color: #0000CC;
+}
+
+#contact span {
+font-size: 24px;
+color: #ff0000;
+}
+/*---END---CONTACT page style---*/
+
+#copyright {
+position: absolute;
+top: 800px; 
+left: 250px;
+width: 300px;
+border: 1px solid black;
+border-radius: 10px;
+padding: 5px;
+text-align: center;
+font-family: FreeSerif;
+font-size: 14px;
+font-style: normal;
+background-color: yellow;
+}

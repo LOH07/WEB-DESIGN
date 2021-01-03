@@ -1,0 +1,141 @@
+#content h1#Title{
+position: absolute;
+top: 210px;
+left: 180px;
+text-align: center;
+color: #0000CC;
+}
+
+#div1 {
+position: absolute;
+margin-top: 80px;
+margin-left: 10px; 
+width: 280px;
+height: 280px;
+border: 1 px solid black;
+border-radius: 10px; /* this is for IE*/
+-moz-border-radius: 10px; /* this is for Firefox*/
+-webkit-border-radius: 10px; /* this is for Chrome and Safari*/
+padding: 0px;
+background-color: #FFFF7E;
+}
+
+#div1 p {
+position: relative;
+top: -30px;
+text-align: justify;
+font-family: 'century gothic';
+font-size: 18;
+color: #0000CC;
+}
+
+#div1 #a1 {
+position: relative;
+top: -70px;
+text-decoration: none;
+font-family: 'century gothic';
+font-weight: bold;
+color: red;}
+
+#div1 #a1:hover {color: purple;}
+
+#div1 #a2 {
+position: relative;
+top: -60px;
+}
+
+#div1 #a2 img {
+border: 0px;
+}
+
+table {
+position: absolute;
+margin-top: 80px; 
+margin-left: 325px; 
+border: 2px solid black;
+border-radius: 10px; /* this is for IE*/
+-moz-border-radius: 10px; /* this is for Firefox*/
+-wbkit-border-radius: 10px; /* this is for Chrome and Safari*/
+/*width: 600px;*/ 
+/*height: 800px;*/ 
+text-align: center;
+background-image: none;
+}
+
+#td1 {
+border: 1px solid black; 
+width: 410px; 
+height: 360px; 
+text-align: center;
+margin: 0;
+border-radius:10px 10px 0px 0px; /* this is for IE*/
+-moz-border-radius:10px 10px 0px 0px; /* this is for Firefox*/
+-webkit-border-radius:10px 10px 0px 0px; /* this is for Chrome and Safari*/
+background-color: #FFFF7E;
+}
+
+#td1 p {
+font-family: STXihei, "华文细黑";
+font-size: 84px;
+text-align:center;
+color: #000000;
+}
+
+#td2 {
+font-size: 14px; 
+font-family: FreeSans; 
+font-weight: bold;
+color: yellow;
+margin: 0;
+border-radius:0px 0px 10px 10px; /* this is for IE*/
+-moz-border-radius:0px 0px 10px 10px; /* this is for Firefox*/
+-webkit-border-radius:0px 0px 10px 10px; /* this is for Chrome and Safari*/ 
+background-color: red;
+}
+
+#listen {
+display: inline-block;
+width: 55px;
+text-align: left;
+padding-left: 3px;
+border:1px solid black;
+border-radius:5px; /* this is for IE*/
+-moz-border-radius:5px; /* this is for Firefox*/
+-webkit-border-radius:5px; /* this is for Chrome and Safari*/
+color: black;
+font-size: 12px;
+font-weight: bold;
+text-decoration: none;
+background: #ffffff url('../imagesVT/listen.png') no-repeat right center;
+}
+
+#listen:hover {
+background-color: yellow;
+color: red;
+}
+
+#userInput {
+text-align: center;
+width: 200px;
+font-family: Arial;
+font-size: 14px;
+font-weight: bold;
+}
+
+#userInput:hover,#userInput:focus {background-color: yellow;}
+
+#submit {
+border: 1px solid black;
+border-radius:5px; /* this is for IE*/
+-moz-border-radius:5px; /* this is for Firefox*/
+-webkit-border-radius:5px; /* this is for Chrome and Safari*/
+font-weight: bold;
+background-color: white;
+font-family: Arial;
+font-size: 12px;
+}
+
+#submit:hover {
+background-color: yellow;
+color: red;
+}
