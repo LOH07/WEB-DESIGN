@@ -1,0 +1,40 @@
+body {
+background-color:black;
+}
+
+#wrapper {
+width:1000px;
+background-color:white;
+font-size:14px;
+}
+
+#logo {
+margin-left:357px;
+}
+
+h1 {
+text-align:center;
+}
+
+fieldset {
+margin-bottom:10px;
+border:3px solid #d3af5f;
+}
+
+legend {
+font-weight:bold;
+}
+
+.pdata {
+margin-bottom:5px;
+text-align:center;
+color:grey;
+}
+
+select {
+margin-bottom:5px;
+}
+
+#send {
+margin-left:450px;
+}

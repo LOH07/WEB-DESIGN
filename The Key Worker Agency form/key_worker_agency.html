@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>The Key Worker Company</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript" src="./js/pagePosition.js"></script>
+	<script type="text/javascript" src="./js/clrVal.js"></script>
+	<script type="text/javascript" src="./js/copyright.js"></script>
+
+</head>
+
+<body>
+<div id="wrapper">
+
+<img src="golden_key1.png" id="logo"/>
+<h1>The Key Worker Agency<br>Application Form</h1>
+
+
+<form id="form">
+	<fieldset>
+        <legend>PERSONAL DETAILS</legend>
+		<label>Name</label>
+        <input type="text" name="fname" class="pdata" title="first name" value="first name" onclick="clrVal(this)">
+        <input type="text" name="mname" class="pdata" title="middle name" value="middle name" onclick="clrVal(this)">
+        <input type="text" name="sname" class="pdata" title="surname" value="surname" onclick="clrVal(this)">
+		
+		<br>
+		<label>gender</label><br>
+		<input type="radio" name="gender" value="man">man
+		<input type="radio" name="gender" value="woman">woman
+		<input type="radio" name="gender" value="other">other
+		
+		<br><br>
+	    <label>date of birth</label>
+		<input type="text" name="bday" class="pdata" title="for example the first day of a month is 01" value="day" pattern="[0-3][0-9]" onclick="clrVal(this)">
+		<input type="text" name="bmonth" class="pdata" title="for example May is 05" value="month number" pattern="[0-1][0-9]" onclick="clrVal(this)">
+		<input type="text" name="byear" class="pdata" title="for example 2000" value="year" pattern="[1-2][0-9][0-9][0-9]" onclick="clrVal(this)">
+	    
+	    <br>
+	    <label>age</label>
+		<input type="text" name="age" class="pdata" title="for example 18" pattern="[1-9][0-9]">
+	</fieldset>
+    
+    <fieldset>
+    <legend>CONTACT</legend>		
+        
+        <label>phone number</label>
+        <input type="text" name="phone" class="pdata" title="for example 07123456789, NOT +7123456789" pattern="[0-9]{11}">
+        
+        <label>e-mail</label>
+        <input type="text" name="email" class="pdata" title="e-mail">
+        
+        <br>
+        <label>address</label>
+        <input type="text" name="houseNr" class="pdata" title="maximum 4 digits and NO zero at the beginning" 
+        value="house number" pattern="^(?!0)[0-9]{1,4}$" onclick="clrVal(this)">
+        
+        <input type="text" name="street" class="pdata" title="street" value="street" onclick="clrVal(this)">
+        <input type="text" name="town" class="pdata" title="town" value="town" onclick="clrVal(this)">
+        <input type="text" name="postCode" class="pdata" title="post code" value="post code ex: AB1 2CD" onclick="clrVal(this)">
+    </fieldset>
+
+    <fieldset>
+		<legend>EDUCATION</legend>
+		
+		<label>highest level of education</label>
+        <select name="education">
+		    <option value="select">select</option>
+            <option value="sScl">secondary school</option>
+            <option value="hScl">high school</option>
+            <option value="col">college</option>
+        </select>
+    </fieldset>
+    
+    <fieldset>
+		<legend>WORK EXPERIENCE (starting with the latest)</legend>
+        
+        <label>from</label>
+        <input type="text" name="startMonth0" class="pdata" title="month" value="month number" maxlength="2" pattern="[0-9]" onclick="clrVal(this)">
+        <input type="text" name="startYear0" class="pdata" title="year" value="year" maxlength="4" pattern="[0-9]" onclick="clrVal(this)">
+        
+        <label>to</label>
+        <input type="text" name="endMonth0" class="pdata" title="month" value="month number" maxlength="2" pattern="[0-9]" onclick="clrVal(this)">
+        <input type="text" name="endYear0" class="pdata" title="year" value="year" maxlength="4" pattern="[0-9]" onclick="clrVal(this)">
+		
+		<br>
+		<label>company name</label>
+		<input type="text" name="company0" class="pdata" title="company name">
+		
+		<label>position</label>
+		<input type="text" name="position0" class="pdata" title="position">
+        
+        <br><br>
+        <label>from</label>
+        <input type="text" name="startMonth1" class="pdata" title="month" value="month number" maxlength="2" pattern="[0-9]" onclick="clrVal(this)">
+        <input type="text" name="startYear1" class="pdata" title="year" value="year" maxlength="4" pattern="[0-9]" onclick="clrVal(this)">
+        
+        <label>to</label>
+        <input type="text" name="endMonth1" class="pdata" title="month" value="month number" maxlength="2" pattern="[0-9]" onclick="clrVal(this)">
+        <input type="text" name="endYear1" class="pdata" title="year" value="year" maxlength="4" pattern="[0-9]" onclick="clrVal(this)">
+		
+		<br>
+		<label>company name</label>
+		<input type="text" name="company1" class="pdata" title="company name">
+		
+		<label>position</label>
+		<input type="text" name="position1" class="pdata" title="position">
+        
+        <br><br>
+        <label>from</label>
+        <input type="text" name="startMonth2" class="pdata" title="month" value="month number" maxlength="2" pattern="[0-9]" onclick="clrVal(this)">
+        <input type="text" name="startYear2" class="pdata" title="year" value="year" maxlength="4" pattern="[0-9]" onclick="clrVal(this)">
+
+        <label>to</label>
+        <input type="text" name="endMonth2" class="pdata" title="month" value="month number" maxlength="2" pattern="[0-9]" onclick="clrVal(this)">
+        <input type="text" name="endYear2" class="pdata" title="year" value="year" maxlength="4" pattern="[0-9]" onclick="clrVal(this)">
+        
+        <br>
+		<label>company name</label>
+		<input type="text" name="company2" class="pdata" title="company name">
+		
+		<label>position</label>
+		<input type="text" name="position2" class="pdata" title="position">
+    </fieldset>
+    
+    <fieldset>
+        <legend>CV/Resume</legend>
+        
+        <input type="file" name="cv" class="" title="CV">
+    </fieldset>
+    
+    <fieldset>
+        <legend>DESIRED JOB DETAILS</legend>
+        
+        <label>position</label>
+        <select name="job">
+            <option value="select">select</option>
+            <option value="barber">barber</option>
+            <option value="carw">car washer</option>
+            <option value="careg">care giver</option>
+            <option value="cleaner">cleaner</option>
+            <option value="nurse">nurse</option>
+        </select>
+        
+        <br>
+        <label>start date</label>
+        <input type="text" name="wday" class="pdata" title="day" value="day" maxlength="2" pattern="[0-9]" onclick="clrVal(this)">
+        <input type="text" name="wmonth" class="pdata" title="month" value="month number" maxlength="2" pattern="[0-9]" onclick="clrVal(this)">
+        <input type="text" name="wyear" class="pdata" title="year" value="year" maxlength="4" pattern="[0-9]" onclick="clrVal(this)">
+    </fieldset>
+    
+    <fieldset>
+        <legend>DATE OF APPLICATION</legend>
+        
+        <input type="text" name="day" class="pdata" title="day" value="day" maxlength="2" pattern="[0-9]" onclick="clrVal(this)">
+        <input type="text" name="month" class="pdata" title="month" value="month number" maxlength="2" pattern="[0-9]" onclick="clrVal(this)">
+        <input type="text" name="year" class="pdata" title="year" value="year" maxlength="4" pattern="[0-9]" onclick="clrVal(this)">
+        
+        <br><br>
+        <input type="submit" id="send" value="submit">
+    </fieldset>
+</form>
+</div>
+</body>
+</html>
