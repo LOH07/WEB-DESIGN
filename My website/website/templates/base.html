@@ -1,0 +1,13 @@
+{% include 'header.html' %}
+
+<div id="content">
+{% block content %}
+
+{% autoescape off %}
+{{ body }}
+{% endautoescape %}
+
+{% endblock content %}
+</div>
+
+{% include 'footer.html' %}
