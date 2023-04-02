@@ -1,0 +1,32 @@
+.errorlist li {
+  list-style: none;
+  font-weight: bold;
+  color:red;
+}
+
+form {
+  margin: 50px auto;
+  text-align:center;
+}
+
+h1 {
+  margin: 10px auto;
+  text-align:center;
+}
+
+table {
+  margin: 10px auto;
+  text-align:center;
+}
+
+th {
+  background-color: orange;
+}
+
+tr:nth-child(even) {
+  background-color: yellow;
+}
+
+tr:nth-child(odd) {
+  background-color: pink;
+}

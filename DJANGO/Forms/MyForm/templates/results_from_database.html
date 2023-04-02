@@ -1,0 +1,18 @@
+
+<h1>Results from database</h1>
+<table>
+  <tr>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Age</th>
+    <th>Gender</th>
+  </tr>
+  {% for object in objects %}
+  <tr>
+    <td>{{ object.fname }}</td>
+    <td>{{ object.lname }}</td>
+    <td>{{ object.age }}</td>
+    <td>{{ object.gender }}</td>
+  </tr>
+  {% endfor %}
+</table>
